@@ -14,7 +14,7 @@ class ClearSpam(commands.Cog):
                 deleted += 1
             except Exception as e:
                 print(f"Error: {e}")
-                await ctx.send(f"🧹 I deleted {deleted} your texts.", delete_after=5)
+                await ctx.send(f"`🧹 I deleted {deleted} your texts.`", delete_after=5)
 
 
     @commands.command()

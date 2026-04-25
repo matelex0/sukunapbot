@@ -1,13 +1,6 @@
 from discord.ext import commands
 import discord
 
-config = {}
-with open("CONFIG.txt") as f:
-    for line in f:
-        if "=" in line:
-            k, v = line.strip().split("=", 1)
-            config[k] = v.strip('"').strip("'").strip()
-
 class AutoResponder(commands.Cog):
     def __init__(self, bot):
         self.bot = bot

@@ -1,97 +1,91 @@
-   _____       _                         _____  ____        _   
-  / ____|     | |                       |  __ \|  _ \      | |  
- | (___  _   _| | ___   _ _ __   __ _   | |__) | |_) | ___ | |_ 
-  \___ \| | | | |/ / | | | '_ \ / _` |  |  ___/|  _ < / _ \| __|
-  ____) | |_| |   <| |_| | | | | (_| |  | |    | |_) | (_) | |_ 
- |_____/ \__,_|_|\_\\__,_|_| |_|\__,_|  |_|    |____/ \___/ \__|
-                                                                                                              
+_                             _____                                _ ____        _    __      ____ 
+      /\   | |                           |  __ \                              | |  _ \      | |   \ \    / /_ |
+     /  \  | | _____  _____  _ __   ___  | |__| |__ _ __ ___  ___  _ __   __ _| | |_| | ___ | |_   \ \  / / | |
+    / /\ \ | |/ _ \ \/ / _ \| '_ \ / _ \ |  ___/ _ \ '__/ __|/ _ \| '_ \ / _` | |  _ < / _ \| __|   \ \/ /  | |
+   / ____ \| |  __/>  < (_) | | | |  __/ | |  |  __/ |  \__ \ (_) | | | | (_| | | |_) | (_) | |_     \  /   | |
+  /_/    \_\_|\___/_/\_\___/|_| |_|\___| |_|   \___|_|  |___/\___/|_| |_|\__,_|_|____/ \___/ \__|     \/    |_|
+                                                                                                               
+# Matelex SelfBot v1.0.0
 
-Welcome to SukunaPBot README!
-Here you will find all the instruction to resolve all the problems you will encounter 
-and a guide how to start and modify things.
+A Discord self-bot with utility, fun, currency and research commands.
 
-# What you will need?
+## Requirements
 
-- Personal Token
-- API KEYS
-- A life
+- Python 3.8+
+- Personal Discord Token
+- `pip install -r requirements.txt`
 
-# First Step
-First you wanna open the CONFIG.txt to insert all the info you will need to setup your selfbot,
-read the notes (comments).
+## Quick Start
 
-# Second Step
-Before starting the bot, you will need to do in your cmd this command "pip install -r requirements.txt",
-this will help you to install the requirements to start the selfbot
+1. Set your token in `CONFIG.txt`
+2. Run `python main.py`
+3. Type `.help` to see all commands
 
-# Third Step
-Now you can start your selfbot with the command "py main.py" or "python3 main.py" in the cmd, the cmd will report you all the errors
-and problems with the selfbot, if do you have any, report them to me thanks!
+## 📘 GENERAL COMMANDS
 
-# Final Step
-Now is all setup, first thing you wanna do is ".help" and look for all the commands!
+| Command | Description |
+|---------|-------------|
+| `.help` | Show help |
+| `.ping` | Bot latency |
+| `.info` | System and bot info |
+| `.serverinfo` | Server information |
+| `.servericon` | Server icon |
+| `.avatar <user>` | User avatar |
+| `.translate <from> <to> <text>` | Translate text |
+| `.langs` | Available languages |
+| `.setstatus <status>` | Set status |
+| `.playing <text>` | Playing status |
+| `.listening <text>` | Listening status |
+| `.watching <text>` | Watching status |
+| `.stream <url> <text>` | Streaming status |
+| `.cactivity` | Clear activity |
+| `.afk` | AFK mode |
+| `.clear <n>` | Delete n messages |
 
-Thanks For your PURCHASE! @Alexone
-If do you encounter some problems with the license, reach me in dm's 'idiozia'.
+## 💰 CRYPTO COMMANDS
 
- _  ___  _   _    _   _   _  _ 
-| ||_ _|/ \ | |  | | / \ | \| |
-| | | || o || |_ | || o || \\ |
-|_| |_||_n_||___||_||_n_||_|\_|
-                               
-Benvenuto in SukunaPBot README!
-Qui troverai tutte le istruzioni per risolvere eventuali problemi
-e una guida su come iniziare e modificare le cose.
+| Command | Description |
+|---------|-------------|
+| `.cryptoeur <coin>` | Crypto price in EUR |
+| `.cryptousd <coin>` | Crypto price in USD |
+| `.exchange <from> <to> <value>` | Currency exchange |
 
-# Di cosa hai bisogno?
+## 🤡 FUN COMMANDS
 
-- Token personale
-- API KEYS
-- Una vita
+| Command | Description |
+|---------|-------------|
+| `.ascii <text>` | Convert to ASCII |
+| `.nitro` | Fake Nitro |
+| `.meme` | Random meme |
+| `.joke` | Random joke |
+| `.wl` | Voice channel whitelist |
+| `.bal` | Coin balance |
+| `.daily` | Daily reward |
+| `.bet <amount>` | Bet coins |
 
-# Primo Passo
-Per prima cosa, apri il file CONFIG.txt e inserisci tutte le informazioni necessarie per configurare il tuo selfbot.
-Leggi le note (commenti).
+## 🔎 RESEARCH COMMANDS
 
-# Secondo Passo
-Prima di avviare il bot, esegui questo comando nel tuo cmd: "pip install -r requirements.txt"
-Questo ti permetterà di installare tutti i requisiti necessari per avviare il selfbot.
+| Command | Description |
+|---------|-------------|
+| `.yt <search>` | YouTube search |
+| `.web <search>` | Google search |
+| `.ipinfo <ip>` | IP info |
+| `.checktoken <token>` | Check Discord token |
 
-# Terzo Passo
-Ora puoi avviare il selfbot con il comando "py main.py" nel cmd. Il cmd ti mostrerà tutti gli errori
-e problemi del selfbot. Se ne hai, segnalameli, grazie!
+## 💎 Gamble System
 
-# Passo Finale
-Ora è tutto pronto! La prima cosa che puoi fare è ".help" e vedere tutti i comandi disponibili!
+Start with 1000 coins!
 
-Grazie per l’acquisto! @Alexone  
-Se hai problemi con la licenza, scrivimi in DM: 'idiozia'.
+- `.bal` - Check balance
+- `.daily` - Get 100-500 coins/day
+- `.bet <amount>` - Bet (50%+ win chance)
 
- _   _  ___________ _    _ 
-| \ | |/  ___|  ___| |  | |
-|  \| |\ `--.| |_  | |  | |
-| . ` | `--. \  _| | |/\| |
-| |\  |/\__/ / |   \  /\  /
-\_| \_/\____/\_|    \/  \/ 
-                           
-All Categories:
+## 📝 Notes
 
-Anal 
-Ass 
-Boobs 
-Gonewild 
-Hanal 
-Hass 
-Hboobs 
-Hentai 
-Hkitsune 
-Hmidriff 
-Hneko 
-Hthigh 
-Neko 
-Paizuri 
-Pgif 
-Pussy 
-Tentacle 
-Thigh 
-Yaoi
+- This bot runs on your Discord account (self-bot)
+- Use with caution, may violate Discord ToS
+- Created by Matelex - matelex.it
+
+## License
+
+MIT License

@@ -25,56 +25,62 @@ class HelpCommand(commands.Cog):
             general_commands = (
                 "## 📘 GENERAL COMMANDS\n\n"
                 "> ↪ **`.help`** - Shows all command categories\n"
-                "> ↪ **`.afk`** - You go in afk mode\n"
-                "> ↪ **`.clear <value>`** - Purge 1 or more of your texts\n"
-                "> ↪ **`.spam <text>`** - Spam what text do you want\n"
-                "> ↪ **`.spamreact <emoji>`** - Spam what react do you want\n"
-                "> ↪ **`.avatar <user>`** - Get a user icon/avatar.\n"
-                "> ↪ **`.info`** - Get info about selfbot creator and much more.\n"
-                "> ↪ **`.nsfw <category>`** - If you tipe only .nsfw, it will apear all categories.\n"
-                "> ↪ **`.ping`** - Pong\n"
-                "> ↪ **`.serverinfo`** - Will pop up all info about the server\n"
-                "> ↪ **`.servericon`** - Will send the server icon\n"
-                "> ↪ **`.playing <text>`** - Custom activity\n"
-                "> ↪ **`.stream <text>`** - Custom activity\n"
-                "> ↪ **`.cactivity <activity>`** - Clear Custom activity\n"
-                "> ↪ **`.setstatus <status dnd, invisible, idle, online>`** - Set status\n"
-                "> ↪ **`.translate <from-lang> <to-lang> <text>`** - Translate, use language format like [en, it] ecc...\n"
-                "> ↪ **`.autoreply <on|off>`** - AutoReply [MAINTENANCE]\n\n"
+                "> ↪ **`.ping`** - Bot latency (API + HTTP)\n"
+                "> ↪ **`.info`** - System and bot info\n"
+                "> ↪ **`.serverinfo`** - Server information\n"
+                "> ↪ **`.servericon`** - Server icon\n"
+                "> ↪ **`.avatar <user>`** - User avatar\n"
+                "> ↪ **`.translate <from> <to> <text>`** - Translate text\n"
+                "> ↪ **`.langs`** - Available languages\n"
+                "> ↪ **`.setstatus <status>`** - Set status (online/idle/dnd/invisible)\n"
+                "> ↪ **`.playing <text>`** - Playing status\n"
+                "> ↪ **`.listening <text>`** - Listening status\n"
+                "> ↪ **`.watching <text>`** - Watching status\n"
+                "> ↪ **`.stream <url> <text>`** - Streaming status\n"
+                "> ↪ **`.cactivity`** - Clear activity\n"
+                "> ↪ **`.afk`** - AFK mode\n"
+                "> ↪ **`.clear <n>`** - Delete n messages\n"
+                "> ↪ **`.nsfw <category>`** - NSFW categories\n"
+                "> ↪ **`.tos`** - Terms of Service\n"
             )
             await ctx.send(general_commands)
 
         elif category.lower() == "currency":
             currency_commands = (
                 "## 💰 CURRENCY COMMANDS\n\n"
-                "> ↪ **`.cryptoeur <crypto>`** - Sends crypto value in eur\n"
-                "> ↪ **`.cryptousd <crypto>`** - Sends crypto value in usd\n"
-                "> ↪ **`.exchange <from-currency> <to-currency> <value>`** - Exchange of currency\n"
-                "> ↪ **`.ltcbal`** - Show's your litecoin balance\n"
-                "> ↪ **`.pp`** - Paypal personal link\n\n"
+                "> ↪ **`.cryptoeur <coin>`** - Crypto price in EUR (price, 24h, market cap, rank)\n"
+                "> ↪ **`.cryptousd <coin>`** - Crypto price in USD\n"
+                "> ↪ **`.exchange <from> <to> <value>`** - Currency exchange\n"
+                "> ↪ **`.ltcbal`** - Litecoin balance\n"
+                "> ↪ **`.pp`** - PayPal link\n"
             )
             await ctx.send(currency_commands)
 
         elif category.lower() == "research":
             research_commands = (
                 "## 🔎 RESEARCH COMMANDS\n\n"
-                "> ↪ **`.yt <search>`** - Search anything you want on youtube\n"
-                "> ↪ **`.ipinfo <ip>`** - Ip info\n"
-                "> ↪ **`.checktoken <token>`** - Check Discord Token\n"
-                "> ↪ **`.web <search>`** - Search anything you want on the web\n\n"
+                "> ↪ **`.yt <search>`** - Search on YouTube\n"
+                "> ↪ **`.ipinfo <ip>`** - IP information\n"
+                "> ↪ **`.checktoken <token>`** - Check Discord token\n"
+                "> ↪ **`.web <search>`** - Google search\n"
             )
             await ctx.send(research_commands)
         
         elif category.lower() == "fun":
             fun_commands = (
                 "## 🤡 FUN COMMANDS\n\n"
-                "> ↪ **`.ascii <text>`** - Transform your text in ascii\n"
-                "> ↪ **`.iphonegift`** - Fake Iphone giveaway\n"
-                "> ↪ **`.nitro`** - Fake Nitro\n"
-                "> ↪ **`.meme`** - Sends a blank meme\n"
-                "> ↪ **`.joke`** - Sends a joke of the day\n"
-                "> ↪ **`.wl`** - Whitelist for you and your friends in a vocal channel\n"
-                "> ↪ **`.web <search>`** - Search anything you want on the web\n\n"
+                "> ↪ **`.ascii <text>`** - Convert text to ASCII art\n"
+                "> ↪ **`.iphonegift`** - Fake iPhone giveaway\n"
+                "> ↪ **`.nitro`** - Fake Discord Nitro\n"
+                "> ↪ **`.meme`** - Random meme\n"
+                "> ↪ **`.joke`** - Random joke\n"
+                "> ↪ **`.wl`** - Voice channel whitelist\n"
+                "\n"
+                "## 💎 GAMBLE SYSTEM\n\n"
+                "> ↪ **`.bal`** - Check your coin balance\n"
+                "> ↪ **`.daily`** - Claim daily reward (100-500 coins)\n"
+                "> ↪ **`.bet <amount>`** - Bet your coins (50%+ chance to win!)\n"
+                "\n*Start with 1000 coins!*"
             )
             await ctx.send(fun_commands)
 

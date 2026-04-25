@@ -1,3 +1,6 @@
 discord.py-self
 pyfiglet
 googletrans
+requests
+psutil
+aiohttp
